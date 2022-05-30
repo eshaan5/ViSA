@@ -17,11 +17,11 @@ body{
     border: red 1px solid;
     margin: 5px;
 }
+/* .button:hover{
+    filter: drop-shadow(5px 5px 1px yellow);
+} */
 .button:hover{
     cursor: pointer;
-    filter: drop-shadow(5px 5px 1px yellow);
-}
-.button:focus{
     background: red;
     color:yellow;
     font-weight: bold;
@@ -76,3 +76,18 @@ img{
     margin: 5px;
     border-radius: 50%;
 }
+
+#turn {
+    display: none;
+    z-index: 100;
+    position: fixed;
+  }
+  
+  @media (orientation: portrait) {
+    #turn {
+      display:block;
+    }
+    #content {
+        display: none;
+    }
+  }
